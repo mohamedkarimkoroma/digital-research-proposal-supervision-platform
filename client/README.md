@@ -1,16 +1,55 @@
-# React + Vite
+# Digital Research Proposal Supervision Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A modern, web-based solution for streamlining the submission, review, and supervision of academic research proposals.**
 
-Currently, two official plugins are available:
+## 📖 Project Overview
+The **Digital Research Proposal Supervision Platform** is a comprehensive web application designed to digitize and automate the traditional, paper-based research proposal supervision process. This platform bridges the gap between students, supervisors, and university administrators by providing a centralized, transparent, and efficient environment for academic milestone tracking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project was developed as a final-year dissertation requirement for **Limkokwing University of Creative Technology**.
 
-## React Compiler
+## 👥 Development Team
+**Group Lead / Lead Developer:** Mohamed Karim Koroma
+**Team Members:** 
+- David Sesay
+- Promise G Sandy
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+### For Students:
+- **Proposal Submission:** Easy-to-use portal to submit research titles, abstracts, and upload PDF proposal documents.
+- **Progress Tracking:** Real-time dashboard to track the status of submissions (Submitted, Under Review, Revision Required, Approved).
+- **Revision Management:** Seamlessly upload revised documents based on supervisor feedback.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### For Supervisors / Lecturers:
+- **Review Portal:** Dedicated dashboard to view assigned student proposals.
+- **Feedback System:** Provide structured feedback and approve/reject proposals.
+- **Milestone Tracking:** Monitor the academic progress of all assigned students.
+
+### For Administrators:
+- **System Oversight:** Full visibility over all users, proposals, and system activity.
+- **User Management:** Approve and manage user accounts (Students, Supervisors, Admins).
+- **Analytics Dashboard:** View statistics on total submissions and approval rates.
+
+## 🔒 Security & Role-Based Access Control (RBAC)
+To simulate a real-world university IT environment, this system uses strict **Role-Based Access Control**:
+- Public registration defaults to the **Student** role.
+- **Supervisors** and **Administrators** require internal authorization.
+- *Note for Examination:* For the purpose of this academic demonstration, an "Account Type" selector is included on the registration page so the examination panel can test all three dashboards. In a production environment, this dropdown would be removed, and users would be assigned roles securely by the University IT Admin.
+
+## 🛠️ Technology Stack
+- **Frontend:** React.js, React Router, Tailwind CSS, Vite
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Mongoose)
+- **Authentication:** JWT (JSON Web Tokens) & bcrypt
+- **File Handling:** Multer (for PDF uploads)
+
+## 🚀 Installation & Local Setup
+
+### Prerequisites
+- Node.js installed on your machine
+- MongoDB Atlas account (or local MongoDB)
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/mohamedkarimkoroma/digital-research-proposal-supervision-platform.git
+cd digital-research-proposal-supervision-platform
